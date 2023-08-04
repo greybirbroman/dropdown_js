@@ -93,7 +93,7 @@ const Dropdown = ({ trigger, content, style }) => {
   const handleTriggerClick = () => {
     setIsOpen((prevState) => {
       if (!prevState) {
-        setWasOpenBeforeScroll(true);
+        setWasOpenBeforeScroll(!prevState);
       }
       return !prevState;
     });
@@ -151,7 +151,7 @@ const Dropdown = ({ trigger, content, style }) => {
         {trigger}
       </button>
 
-      {isOpen &&
+      {isOpen && wasOpenBeforeScroll &&
         ReactDOM.createPortal(
           <div ref={dropdownRef} style={{ position: 'absolute', ...position }}>
             <ul className={styles.dropdownList}>
