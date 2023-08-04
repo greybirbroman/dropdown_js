@@ -1,0 +1,42 @@
+.dropdownTrigger {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 4px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.dropdownList {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 10px;
+    text-align: left;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    color: rgba(0, 0, 0, .7);
+}
+
+.dropdownItem:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+}
+
+.dropdownItem:active {
+    color: blueviolet;
+}
