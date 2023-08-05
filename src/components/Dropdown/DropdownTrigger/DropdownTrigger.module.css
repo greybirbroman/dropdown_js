@@ -1,0 +1,17 @@
+.dropdownTrigger {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  transition: 0.3s;
+}
+
+.dropdownTrigger:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}

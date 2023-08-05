@@ -1,0 +1,32 @@
+.dropdownList {
+  width: 260px;
+  /* высота для теста? Не знаю как правильно... */
+  /* max-height: 150px;
+    overflow-y: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 10px;
+  text-align: left;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: default;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdownItem:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.dropdownItem:active {
+    color: rgba(0, 0, 0, 0.7);
+}
