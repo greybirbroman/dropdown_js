@@ -93,36 +93,7 @@ const useDropdown = (id) => {
     };
   }, []);
 
-  // Добавляем обработчики событий
-  // useEffect(() => {
-  //   const handleMouseLeave = () => {
-  //     setIsHovered(false);
-  //   };
-
-  //   const handleMouseEnter = () => {
-  //     setIsHovered(true);
-  //   };
-
-  //   if (triggerRef.current) {
-  //     triggerRef.current.addEventListener('mouseleave', handleMouseLeave);
-  //     triggerRef.current.addEventListener('mouseenter', handleMouseEnter);
-  //   }
-
-  //   // Удаляем обработчики событий при размонтировании компонента
-  //   return () => {
-  //     if (triggerRef.current) {
-  //       triggerRef.current.removeEventListener('mouseleave', handleMouseLeave);
-  //       triggerRef.current.removeEventListener('mouseenter', handleMouseEnter);
-  //     }
-  //   };
-  // }, []);
-
-  // // Этот эффект будет слушать изменения в состоянии наведения
-  // useEffect(() => {
-  //   if (!isHovered && isOpen) {
-  //     setIsOpen(false);
-  //   }
-  // }, [isHovered, isOpen]);
+  
 
   return {
     isOpen,
