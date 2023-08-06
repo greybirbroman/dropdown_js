@@ -6,7 +6,7 @@ import FeatherIcon from 'feather-icons-react';
 function App() {
   return (
     <main className='main'>
-      {/* <div className='container'> */}
+      <div className='container'>
         <Dropdown
           id='share'
           content={menuList}
@@ -17,8 +17,8 @@ function App() {
           content={menuList2}
           trigger={<FeatherIcon icon='menu' strokeWidth='2' />}
         />
-      {/* </div> */}
-      {/* <div className='container'>
+      </div>
+      <div className='container'>
         <Dropdown
           id='settings'
           content={menuList3}
@@ -29,7 +29,7 @@ function App() {
           content={menuList4}
           trigger={<FeatherIcon icon='grid' strokeWidth='2' />}
         />
-      </div> */}
+      </div>
     </main>
   );
 }

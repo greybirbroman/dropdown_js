@@ -1,6 +1,7 @@
 .main {
   width: 100%;
-  min-height: 2000px;
+  min-height: 100vh;
+  /* min-height: 2000px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

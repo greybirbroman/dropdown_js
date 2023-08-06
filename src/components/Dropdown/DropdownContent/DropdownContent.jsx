@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import styles from './DropdownContent.module.css';
 
-const DropdownContent = ({ content, position, dropdownRef, onSelect }) => {
+const DropdownContent = ({ content, position, dropdownRef, onSelect, onMouseLeave }) => {
     
   const handleKeyDown = (event, callback) => {
     if (event.key === 'Enter' || event.key === ' ') {
@@ -22,6 +22,7 @@ const DropdownContent = ({ content, position, dropdownRef, onSelect }) => {
             className={styles.dropdownItem}
             onClick={() => onSelect(item.callback)}
             onKeyDown={(event) => handleKeyDown(event, item.callback)}
+            onMouseLeave={onMouseLeave}
             tabIndex={0}
           >
             <p>{item.label}</p>

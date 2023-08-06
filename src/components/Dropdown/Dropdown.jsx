@@ -11,18 +11,19 @@ const Dropdown = ({ id, trigger, content }) => {
     wasOpenBeforeScrollState,
     handleTriggerClick,
     handleMenuItemClick,
-    isHovered,
-    setIsHovered,
+    handleTriggerMouseEnter,
+    handleDropdownMouseLeave
   } = useDropdown(id);
 
-  console.log(isHovered)
   return (
+    // "и раскрывать его по клику и ховеру" ?
+    // Раскомментировать onMouseEnter & onMouseLeave для реакции dropdown на hover
     <>
+     {/* <div onMouseLeave={handleDropdownMouseLeave}> */}
       <DropdownTrigger
         triggerRef={triggerRef}
         onClick={handleTriggerClick}
-        // onMouseEnter={() => setIsHovered(true)}
-        // onMouseLeave={() => setIsHovered(false)}
+        //onMouseEnter={handleTriggerMouseEnter}
       >
         {trigger}
       </DropdownTrigger>
@@ -34,6 +35,7 @@ const Dropdown = ({ id, trigger, content }) => {
           onSelect={handleMenuItemClick}
         />
       )}
+    {/* </div> */}
     </>
   );
 };

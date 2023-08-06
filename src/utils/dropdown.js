@@ -109,7 +109,7 @@ export const menuList4 = [
 ]
 
   export const calculatePosition = (refTrigger, refDropdown, setState) => {
-    // Проверяем, что ссылки на DOM-элементы (triggerRef и dropdownRef) существуют
+    // Проверяем, что ссылки на элементы (triggerRef и dropdownRef) существуют
     if (refTrigger.current && refDropdown.current) {
         // Получаем координаты триггера и выпадающего меню
         const triggerRect = refTrigger.current.getBoundingClientRect();
@@ -157,21 +157,21 @@ export const menuList4 = [
 //     {
 //         id: 1,
 //         list: menuList,
-//         trigger: <FeatherIcon icon='more-vertical' strokeWidth='2.5' />
+//         trigger: <FeatherIcon icon='more-vertical' strokeWidth='2' />
 //     },
 //     {
 //         id: 2,
 //         list: menuList2,
-//         trigger: <FeatherIcon icon='arrow-down' strokeWidth='2.5' />
+//         trigger: <FeatherIcon icon='arrow-down' strokeWidth='2' />
 //     },
 //     {
 //         id: 3,
 //         list: menuList3,
-//         trigger: <FeatherIcon icon='menu' strokeWidth='2.5' />
+//         trigger: <FeatherIcon icon='menu' strokeWidth='2' />
 //     },
 //     {
 //         id: 4,
 //         list: menuList4,
-//         trigger: <FeatherIcon icon='grid' strokeWidth='2.5' />
+//         trigger: <FeatherIcon icon='grid' strokeWidth='2' />
 //     },
 // ]
